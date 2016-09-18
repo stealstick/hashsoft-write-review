@@ -7,21 +7,21 @@
 
 PARAMETERS
 
--id : Int
--name : String
--title : String
--text : string
+- id : Int
+- name : String
+- title : String
+- text : string
 
 RESPONSES
 
--insert : String(JSON)
+- insert : String(JSON)
 - ex) {insert : ok} or {insert : error}
 
 ### GET /review/write.php
 
 PARAMETERS
 
--id : Int
+- id : Int
 
 RESPONSES
 
