@@ -10,7 +10,8 @@ PARAMETERS
 - id : Int
 - name : String
 - title : String
-- text : string
+- text : String
+- star : Int
 
 RESPONSES
 
@@ -29,7 +30,8 @@ RESPONSES
 - title : String
 - text : String
 - time : String
-- ex) [{"name":"","title":"","text":"","time":"September 18, 2016, 10:47 am"}]
+- star : Int
+- ex) [{"name":"","title":"","text":"","time":"September 18, 2016, 10:47 am","star":2}]
 
 
 
@@ -52,7 +54,8 @@ CREATE TABLE IF NOT EXISTS `review` (
   `name` varchar(100) NOT NULL,
   `title` varchar(200) NOT NULL,
   `text` varchar(1000) NOT NULL,
-  `time` varchar(30) NOT NULL
+  `time` varchar(30) NOT NULL,
+  `star` int(11) NOT NULL,
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 

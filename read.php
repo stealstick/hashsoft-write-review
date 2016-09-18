@@ -3,7 +3,7 @@ include 'connect.php';
 
 $id = $_GET['id'];
 $array= array();
-$query=mysql_query("select name, title, text, time from review where id = '$id'");
+$query=mysql_query("select name, title, text, time, star from review where id = '$id'");
 
 if(isset($id))
 {
@@ -13,6 +13,7 @@ if(isset($id))
 		'title'=>$data[title],
 		'text'=>$data[text],
 		'time'=>$data[time],
+		'star'=>(int)$data[star],
 		));
 	}
 	echo json_encode($array);
