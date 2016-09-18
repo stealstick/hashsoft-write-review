@@ -11,6 +11,7 @@ if(isset($id))
 		array_push($array, array(
 		'name'=>$data[name],
 		'title'=>$data[title],
+		'text'=>$data[text],
 		'time'=>$data[time],
 		));
 	}
