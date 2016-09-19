@@ -12,7 +12,7 @@ if(isset($id))
 		'name'=>$data[name],
 		'title'=>$data[title],
 		'text'=>$data[text],
-		'time'=>$data[time],
+		'time'=>(float)$data[time],
 		'star'=>(int)$data[star],
 		));
 	}

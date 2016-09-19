@@ -6,7 +6,7 @@ $name = $_POST['name'];
 $title = $_POST['title'];
 $text = $_POST['text'];
 $star = $_POST['star'];
-$time = date("F j, Y, g:i a");
+$time = time();
 
 if(isset($id)&&isset($name)&&isset($title)&&isset($text)&&isset($time))
 {
